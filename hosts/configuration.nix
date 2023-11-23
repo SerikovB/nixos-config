@@ -2,13 +2,15 @@
 { config, lib, pkgs, unstable, inputs, vars, ... }:
 
 {
-	imports = ( import ../modules/desktops ++
+	imports = ( 
+		import ../modules/desktops ++
 		import ../modules/editors ++
 		import ../modules/hardware ++
 		import ../modules/programs ++
 		import ../modules/services ++
 		import ../modules/shell ++
-		import ../modules/theming 
+		import ../modules/theming ++
+		import ../modules/virt
 		) ++ [
 			./env.nix
 		];
