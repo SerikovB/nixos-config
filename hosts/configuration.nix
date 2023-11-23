@@ -21,7 +21,6 @@
 	# Users
 	users.users.${vars.user} =  {
 		isNormalUser = true;
-		shell = pkgs.zsh;
 		extraGroups = [
 			"wheel"
 			"video"
