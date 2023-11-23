@@ -15,6 +15,9 @@
 		XDG_BIN_HOME = "$HOME/.local/bin";
 		XDG_STATE_HOME = "$HOME/.local/state";
 
+		GTK_RC_FILES="$XDG_CONFIG_HOME/gtk-1.0/gtkrc";
+		GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc";
+
 		};
 	environment.systemPackages = with pkgs; [
 		# Terminal
