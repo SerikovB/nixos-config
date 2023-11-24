@@ -32,6 +32,8 @@
 		wget
 		curl
 
+		# Devtools
+
 		# Editors
 		neovim
 
