@@ -22,9 +22,15 @@
 		url = "github:hyprwm/Hyprland";
 		inputs.nixpkgs.follows = "nixpkgs-unstable";
 		};
+
+	# Nixvim
+	nixvim = {
+		url = "github:nix-community/nixvim";
+		inputs.nixpkgs.follows = "nixpkgs";
+		};
   };
 
-  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, nur, home-manager, hyprland, ...} :
+  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, nur, home-manager, hyprland, nixvim, ...} :
   	let
 		vars = {
 			user = "sbk";
@@ -37,7 +43,7 @@
 		nixosConfigurations = (
 			import ./hosts {
 				inherit (nixpkgs) lib;
-				inherit inputs nixpkgs nixpkgs-unstable home-manager nur hyprland vars;
+				inherit inputs nixpkgs nixpkgs-unstable home-manager nur hyprland nixvim vars;
 				}	
 			);
 		};

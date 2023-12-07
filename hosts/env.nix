@@ -36,10 +36,6 @@
 		nodejs
 		python3
 
-
-		# Editors
-		neovim
-
 		# Audio/Video
 		alsa-utils
 		feh
@@ -49,6 +45,8 @@
 		# Apps
 		lutris
 		kitty
+		wine
+		winetricks
 
 		] ++ 
 		# From unstable
