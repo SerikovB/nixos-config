@@ -33,6 +33,9 @@
 		curl
 
 		# Devtools
+		nodejs
+		python3
+
 
 		# Editors
 		neovim
